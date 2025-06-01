@@ -1,52 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
-    <div style="display: flex; align-items: center;">
-      <img src="1212.png" height="90px" style="margin-right: 20px;">
-      <a href="https://apply.pcu.edu.in/#about" target="_main">
-        <button class="Two" style="margin-right: 10px;">About</button>
-      </a>
-      <a href="https://apply.pcu.edu.in/#contact" target="_main">
-        <button class="Two" style="margin-right: 10px;">Contact</button>
-      </a>
-    </div>
-  </header>
+  <!-- Login Section -->
+  <div id="loginPage" style="text-align:center;">
+    <h2 id="logingheading">Student Login</h2>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <input type="password" id="password" placeholder="Password"><br><br>
+    <button onclick="validateLogin()" class="One">Login</button>
+  </div>
+
+  <!-- Resume Section (initially hidden) -->
+  <div id="resumePage" style="display:none;">
+
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+      <div style="display: flex; align-items: center;">
+        <img src="1212.png" height="90px" style="margin-right: 20px;">
+        <a href="https://apply.pcu.edu.in/#about" target="_main">
+          <button class="Two" style="margin-right: 10px;">About</button>
+        </a>
+        <a href="https://apply.pcu.edu.in/#contact" target="_main">
+          <button class="Two" style="margin-right: 10px;">Contact</button>
+        </a>
+      </div>
+    </header>
     <hr>
     
-  <pre>                                                                                           <img src="image.png" alt="My Image" height="200" id="One"></pre>
-  <h2><b>Ranjeet Shinde</b></h2>
-   <h6> Web Developer</h6>
-   <hr>
- <ul><li><b>Objective</b></li></ul>
-   <ul> <p>Third-year Computer Science student with strong skills in programming, machine learning, and data analysis. Eager to apply technical knowledge through impactful projects and internship opportunities.</p></ul>
-  <ul><li><b>Education</b></li></ul>
-  <ul><p>Pimpri Chinchwad University – B.Tech in Computer Science Engineering (2023 – 2027)<br>
-    CGPA: 7.20
-    <button style="margin-left:100px;" class="One"><a href="Sy Result.pdf" download target="_main">Download</a></button>
+    <pre>                                                                                           <img src="image.png" alt="My Image" height="200" id="One"></pre>
+    <h2><b>Ranjeet Shinde</b></h2>
+    <h6> Web Developer</h6>
+    <hr>
+
+    <ul><li><b>Objective</b></li></ul>
+    <ul><p>Third-year Computer Science student with strong skills in programming, machine learning, and data analysis. Eager to apply technical knowledge through impactful projects and internship opportunities.</p></ul>
+
+    <ul><li><b>Education</b></li></ul>
+    <ul><p>Pimpri Chinchwad University – B.Tech in Computer Science Engineering (2023 – 2027)<br>
+      CGPA: 7.20
+      <button style="margin-left:100px;" class="One"><a href="Sy Result.pdf" download target="_main">Download</a></button>
     </p></ul>
+
     <ul><li><b>Projects</b></li></ul>
-    <ol><li><u>Crop Disease Detector | <b>May 2024</u></b></li>
-    <ul><p>A system that identifies and diagnoses plant diseases from leaf images using machine learning and image processing, helping farmers take timely action.
-        Technologies: ML/DL, OpenCV, Dataset Handling,Frontend Development.</ul></p>
-        <li><u>WhatsApp Chat Analyzer | <b>April 2025</u></b></li>
-        <ul><p>Tool that processes WhatsApp chat exports to extract insights such as message frequency, active hours, common words, and user activity using NLP and data visualization.
-            Technologies: Python, Pandas, Data Visualization, Text Parsing.
-            </p></ul></ol>
-        <ul><li><b>Internship</b></li></ul>
-    <ol><li>AWS Clod Virtual Internship | <b>July-September 2024</li></b>
-    <li>ISRO Agnirva Internship | <b>December-January 2025</b></li></ol>
+    <ol>
+      <li><u>Crop Disease Detector | <b>May 2024</b></u></li>
+      <ul><p>A system that identifies and diagnoses plant diseases from leaf images using machine learning and image processing, helping farmers take timely action.<br>
+        Technologies: ML/DL, OpenCV, Dataset Handling, Frontend Development.</p></ul>
+      
+      <li><u>WhatsApp Chat Analyzer | <b>April 2025</b></u></li>
+      <ul><p>Tool that processes WhatsApp chat exports to extract insights such as message frequency, active hours, common words, and user activity using NLP and data visualization.<br>
+        Technologies: Python, Pandas, Data Visualization, Text Parsing.</p></ul>
+    </ol>
+
+    <ul><li><b>Internship</b></li></ul>
+    <ol>
+      <li>AWS Cloud Virtual Internship | <b>July–September 2024</b></li>
+      <li>ISRO Agnirva Internship | <b>December–January 2025</b></li>
+    </ol>
+
     <hr>
     <a href="Ranjeet Resume.docx" download>
-       <button class="One">Download Resume</button></a>
+      <button class="One">Download Resume</button>
+    </a>
+
+  </div>
+
+  <!-- JS for login -->
+  <script>
+    function validateLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "Ranjeet" && password === "Ranjeet@6639") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("resumePage").style.display = "block";
+      } else {
+        alert("Invalid username or password!");
+      }
+    }
+  </script>
+
 </body>
 </html>
