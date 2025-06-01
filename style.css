@@ -5,10 +5,12 @@
 h2{
     text-decoration: underline;
     text-align: center;
+    font-family: 'comic sans ms';
 }
 h6{
     text-align: center;
     font:inherit;
+    font-family: "Trebuchet MS";
 }
 body{
     background-color: #4C191B ;
