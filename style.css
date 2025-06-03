@@ -1,21 +1,25 @@
+/* image style*/
 #One{
     cursor: pointer;
 }
-
+/*logining and name heading*/
 h2{
     text-decoration: underline;
     text-align: center;
     font-family: 'comic sans ms';
 }
+/*h6 text in center*/
 h6{
     text-align: center;
     font:inherit;
     font-family: "Trebuchet MS";
 }
+/*body background color and text color*/
 body{
     background-color: #4C191B ;
     color:#ECFFF8;
 }
+/*button style for Login and Download*/
 .One{
     background-color: #E3DAFF;
     border-radius: 5px;
@@ -23,6 +27,7 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+/*button style for Resume Header*/
 .Two{
     background-color: #4C191B ;
     color: white;
@@ -32,9 +37,7 @@ body{
     border-width: 5px;
     border-color: rgb(239, 174, 62);
 }
-#Three{
-    width:"40px";
-}
+/*button style for login page*/
 #loginPage{
     background-color: #0bcbe5 ;
     color: white;
@@ -44,6 +47,7 @@ body{
     margin: auto;
     margin-top: 100px;
 }
+/*login page text in center*/
 #logingheading{
     text-align: center;
     font-family: 'Trebuchet MSs';
