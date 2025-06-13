@@ -16,8 +16,9 @@ h6{
 }
 /*body background color and text color*/
 body{
-    /*background: url('pcu.jpeg') no-repeat center center fixed;
-    background-size: cover;*/
+    background: #4C191B;
+ color: rgb(255, 255, 255);
+ font-family: "Miniver", sans-serif;
 }
 /*button style for Login and Download*/
 .One{
@@ -37,20 +38,24 @@ body{
     border-width: 5px;
     border-color: rgb(239, 174, 62);
 }
-/*button style for login page*/
-#loginPage{
-    background:url('pcu.jpeg') no-repeat center center fixed;
-    background-size: cover ;
-    height: 700px;
-    color: white;
-}
-/*login page text in center*/
-#logingheading{
+/*login page for student login title*/
+.loginpage{
     text-align: center;
+    color: white;
     font-family: 'Trebuchet MSs';
     font-size: 30px;
-    color: #ffffff ;
 }
-.Resumeimage{
-    background: #673b3b;
+/*login portal style*/
+#loginPage{
+    background-color: #777477;
+  padding: 30px;
+  border-radius: 800px;
+  text-align: center;
+    width: 600px;
+}
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(222, 144, 60);
+    text-decoration:#E3DAFF underline;
 }
