@@ -16,8 +16,8 @@ h6{
 }
 /*body background color and text color*/
 body{
-    background-color: #4C191B ;
-    color:#ECFFF8;
+    /*background: url('pcu.jpeg') no-repeat center center fixed;
+    background-size: cover;*/
 }
 /*button style for Login and Download*/
 .One{
@@ -39,13 +39,10 @@ body{
 }
 /*button style for login page*/
 #loginPage{
-    background-color: #0bcbe5 ;
+    background:url('pcu.jpeg') no-repeat center center fixed;
+    background-size: cover ;
+    height: 700px;
     color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    margin: auto;
-    margin-top: 100px;
 }
 /*login page text in center*/
 #logingheading{
@@ -53,4 +50,7 @@ body{
     font-family: 'Trebuchet MSs';
     font-size: 30px;
     color: #ffffff ;
+}
+.Resumeimage{
+    background: #673b3b;
 }

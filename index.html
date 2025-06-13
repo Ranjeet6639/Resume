@@ -6,7 +6,7 @@
   <title>Resume</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="Loginimage">
 
   <!-- Login Section -->
   <div id="loginPage" style="text-align:center;">
@@ -14,11 +14,27 @@
     <input type="text" id="username" placeholder="Username"><br><br>
     <input type="password" id="password" placeholder="Password"><br><br>
     <button onclick="validateLogin()" class="One">Login</button>
-  </div>
+  </div> 
 
   <!-- Resume Section (initially hidden) -->
-  <div id="resumePage" style="display:none;">
+  <div id="resumePage" style="display:none;"> 
 
+    <!-- JS for login -->
+  <script>
+    function validateLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "Ranjeet" && password === "Ranjeet@6639") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("resumePage").style.display = "block";
+      } else {
+        alert("Invalid username or password!");
+      }
+    }
+  </script>
+</body>
+<body class="Resumeimage">
     <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
       <div style="display: flex; align-items: center;">
         <img src="1212.png" height="90px" style="margin-right: 20px;">
@@ -70,20 +86,7 @@
 
   </div>
 
-  <!-- JS for login -->
-  <script>
-    function validateLogin() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-
-      if (username === "Ranjeet" && password === "Ranjeet@6639") {
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("resumePage").style.display = "block";
-      } else {
-        alert("Invalid username or password!");
-      }
-    }
-  </script>
+  
 
 </body>
 </html>
