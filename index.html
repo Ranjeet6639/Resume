@@ -8,7 +8,7 @@
 </head>
 <body>
   <!-- Login Section -->
-  <div id="loginPage" style="margin-left: 450px;margin-top: 200px;">
+  <div id="loginPage" style="margin-left: 450px; margin-top: 200px;">
     <h3 class="asdfg">Pimpri Chinchwad University</h3>
     <h2 class="loginpage">Student Login</h2>
     <input type="text" id="username" placeholder="Username"><br><br>
@@ -16,25 +16,8 @@
     <button onclick="validateLogin()" class="One">Login</button>
   </div> 
 
-  <!-- Resume Section (initially hidden) -->
-  <div id="resumePage" style="display:none;"> 
-
-    <!-- JS for login -->
-  <script>
-    function validateLogin() {
-      var username = document.getElementById("username").value;
-      var password = document.getElementById("password").value;
-
-      if (username === "Ranjeet" && password === "Ranjeet@6639") {
-        document.getElementById("loginPage").style.display = "none";
-        document.getElementById("resumePage").style.display = "block";
-      } else {
-        alert("Invalid username or password!");
-      }
-    }
-  </script>
-</body>
-<body>
+  <!-- Ranjeet's Resume Section -->
+  <div id="ranjeetResume" style="display: none;">
     <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
       <div style="display: flex; align-items: center;">
         <img src="1212.png" height="90px" style="margin-right: 20px;">
@@ -50,7 +33,7 @@
     
     <pre>                                                                                           <img src="image.png" alt="My Image" height="200" id="One"></pre>
     <h2><b>Ranjeet Shinde</b></h2>
-    <h6> Web Developer</h6>
+    <h6>Web Developer</h6>
     <hr>
 
     <ul><li><b>Objective</b></li></ul>
@@ -65,28 +48,127 @@
     <ul><li><b>Projects</b></li></ul>
     <ol>
       <li><u>Crop Disease Detector | <b>May 2024</b></u></li>
-      <ul><p>A system that identifies and diagnoses plant diseases from leaf images using machine learning and image processing, helping farmers take timely action.<br>
-        Technologies: ML/DL, OpenCV, Dataset Handling, Frontend Development.</p></ul>
+      <ul><p>Identifies and diagnoses plant diseases from leaf images using machine learning and image processing.<br>
+        Technologies: ML/DL, OpenCV, Frontend.</p></ul>
       
       <li><u>WhatsApp Chat Analyzer | <b>April 2025</b></u></li>
-      <ul><p>Tool that processes WhatsApp chat exports to extract insights such as message frequency, active hours, common words, and user activity using NLP and data visualization.<br>
-        Technologies: Python, Pandas, Data Visualization, Text Parsing.</p></ul>
+      <ul><p>Processes WhatsApp chats to extract insights using NLP and data visualization.<br>
+        Technologies: Python, Pandas, Text Parsing.</p></ul>
     </ol>
 
     <ul><li><b>Internship</b></li></ul>
     <ol>
-      <li>AWS Cloud Virtual Internship | <b>July–September 2024</b></li>
-      <li>ISRO Agnirva Internship | <b>December–January 2025</b></li>
+      <li>AWS Cloud Virtual Internship | <b>July–Sept 2024</b></li>
+      <li>ISRO Agnirva Internship | <b>Dec–Jan 2025</b></li>
     </ol>
 
     <hr>
     <a href="Ranjeet Resume.docx" download>
       <button class="One">Download Resume</button>
     </a>
-
   </div>
 
-  
+  <!-- Somesh's Resume Section -->
+  <div id="someshResume" style="display: none;">
+    <header style="padding: 10px;">
+      <img src="Somesh/image (1).png" height="200px" style="margin-left: 630px;">
+      <h2>Somesh Jape</h2>
+    </header>
+    <hr>
 
+    <ul><li><b>Objective</b></li></ul>
+    <ul><p>Seeking a challenging role in a dynamic organization where I can apply my skills to contribute to 
+      organizational growth while continuing to develop professionally.</p></ul>
+
+    <ul><li><b>Education</b></li></ul>
+    <ul><p>Pimpri Chinchwad University – B.Tech in CSE (2023 – 2027)<br>
+      CGPA: 7.00
+      <button style="margin-left:100px;" class="One"><a href="Somesh_Result.pdf" download target="_main">Download</a></button>
+    </p>
+    <p> HSC – Pemraj Sarda College Ahilyanagar(Maharashtra State Board)  
+      Feb 2023, <br> Percentage: 66.67  </p></ul>
+
+    <ul><li><b>Projects</b></li></ul>
+    <ol>
+      <li><u>Cyberbullying Detection Web App <b>(Jan 2025 – Apr 2025)  </b></u></li>
+      <ul><li><p>Developed a Python-based ML web application to detect offensive texts and alert users. </li></p>
+      <li><p>Used Natural Language Processing (NLP) and supervised learning techniques.  </p></li>
+    <li><p>Integrated a Flask-based backend with a responsive HTML/CSS frontend. </p></li>
+  <li><P>Trained the model using labeled datasets and achieved over 85% accuracy.</P></li></ul>
+
+      <li><u>Payroll Management System <b>J(May 2024 – Aug 2024)</b></u></li>
+      <ul><li><p>Created a Python + MySQL web app for managing employee records and payroll.  </p></li>
+      <li><p> Enabled CRUD operations for employee records, salary calculations, and attendance logs. </p></li>
+    <li><p> Designed secure login for admin panel and used error-handling mechanisms for data integrity. </p></li>
+  <li><p>Exported employee reports in CSV format for monthly processing. </p></li></ul>
+  <li><u>E-commerce Website<b> (Jan 2024 – Mar 2024) </b> </u></li>
+  <ul><li><p>Designed a fully functional e-commerce site using HTML, CSS, JavaScript.  </p></li>
+  <li><p>Implemented user-friendly UI/UX design and client-side form validations. </p></li>
+<li><p>Added dummy payment integration and product filtering features.</p></li>
+<li><p>Applied Git for version control during development. </p></li></ul>
+  </ol><br>
+    <ul><li><b>Internship</b></li></ul>
+    <ol>
+      <li><p>Data Engineering Virtual Internship<b> (Jul 2024 – Sep 2024) </b></p></li>
+    </ol>
+    <ul><li><p>Gained hands-on experience with tools such as AWS S3, AWS Glue, AWS Lambda, and AWS Athena. </p></li>
+    <li><p>Developed skills in data ingestion, transformation, and pipeline design using cloud-native tools. </p></li>
+  <li><p> Completed AWS Academy modules and assessments as part of a structured industry curriculum.</p></li></ul>
+  <br>
+  <ul><li><b><u>Certifications</u></b> <button style="margin-left: 20px;" class="One"><a href="(https://drive.google.com/drive/folders/1BHCuzmBg8ofpjv2w9m66vlFTG9Fnp0G6)" target="_main">Drive</a></button></li>
+<li><p>AWS Cloud Foundation</p></li>
+<li><p> AWS Data Engineering</p></li>
+<li><p>Red Hat: Introduction to OpenShift Applications, Containers and Kubernetes  </p></li>
+<li><p>Red Hat: Linux Fundamentals  </p></li>
+<li><p> Django Web Framework by Meta </p></li>
+<li><p>Foundations of Cybersecurity by Google</p></li>
+<li><p> Full-stack Development with Django: Managing Migrations by Coursera</p></li></ul>
+
+    <hr>
+    <a href="Somesh/resume_somesh[1].pdf" download target="_main">
+      <button class="One">Download Resume</button>
+    </a>
+  </div>
+  <!-- Atharv's Resume Section -->
+  <div id="atharvResume" style="display: none;">
+    <header style="padding: 10px;">
+      <h2>Atharv Patil</h2>
+      <h6>Data Analyst</h6>
+    </header>
+    <hr>
+
+    <ul><li><b>Objective</b></li></ul>
+    <ul><p>Detail-oriented Computer Science student focused on data-driven solutions and analytics. Passionate about transforming data into actionable insights.</p></ul>
+
+    <ul><li><b>Education</b></li></ul>
+    <ul><p>Pimpri Chinchwad University – B.Tech in CSE (2023 – 2027)<br>
+      CGPA: 7.80
+      <button style="margin-left:100px;" class="One"><a href="Somesh_Result.pdf" download target="_main">Download</a></button>
+    </p></ul>
+
+
+  <!-- JS for login -->
+  <script>
+    function validateLogin() {
+      var username = document.getElementById("username").value.trim();
+      var password = document.getElementById("password").value.trim();
+
+      if (username === "Ranjeet" && password === "Ranjeet@6639") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("ranjeetResume").style.display = "block";
+      } 
+      else if (username === "Somesh" && password === "Somesh@1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("someshResume").style.display = "block";
+      } 
+      else if (username === "Atharv" && password === "Atharv@1234") {
+        document.getElementById("loginPage").style.display = "none";
+        document.getElementById("atharvResume").style.display = "block";
+      }
+      else {
+        alert("Invalid username or password!");
+      }
+    }
+  </script>
 </body>
 </html>
