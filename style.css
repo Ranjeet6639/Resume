@@ -38,6 +38,13 @@ body{
     border-width: 5px;
     border-color: rgb(239, 174, 62);
 }
+/*button style for Git and Linkedin*/
+.Three{
+    background-color: #E3DAFF;
+    border-radius: 15px;
+    padding: 5px 10px;
+    border-image: round;
+}
 /*login page for student login title*/
 .loginpage{
     text-align: center;
