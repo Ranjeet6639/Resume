@@ -21,19 +21,17 @@ body{
  font-family: "Miniver", sans-serif;
 }
 /* Default for desktop */
-.container {
-    width: 400px;
-    margin: 100px auto;
-    padding: 20px;
-    border-radius: 50px;
-}
-/* For smaller screens like mobile */
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        margin: 20px auto;
-        padding: 10px;
-        border-radius: 20px;
+@media (min-width: 768px) {
+      .login-box {
+        border-radius: 50px;
+      }
+    .login-box h3 {
+        font-size: 22px;
+      }
+
+      .login-box a {
+        font-size: 20px;
+      }
     }
 /*button style for Login and Download*/
 .One{
