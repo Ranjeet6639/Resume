@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - PCU Student Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f5f7fa;
+    }
+    .form-container {
+      display: inline-block;
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input, select {
+      width: 250px;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Student Registration</h2>
+    <form id="registerForm">
+      <input type="text" name="fullName" placeholder="Full Name" required><br>
+      <input type="text" name="username" placeholder="Username" required><br>
+      <input type="email" name="email" placeholder="Email" required><br>
+      <input type="password" name="password" placeholder="Password" required><br>
+      <input type="password" name="confirmPassword" placeholder="Confirm Password" required><br>
+      <select name="year" required>
+        <option value="">Select Year</option>
+        <option value="FE">First Year</option>
+        <option value="SE">Second Year</option>
+        <option value="TE">Third Year</option>
+        <option value="BE">Final Year</option>
+      </select><br>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const data = {
+        fullName: form.fullName.value,
+        username: form.username.value,
+        email: form.email.value,
+        password: form.password.value,
+        confirmPassword: form.confirmPassword.value,
+        year: form.year.value
+      };
+
+      if (data.password !== data.confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+      }
+
+      try {
+        const res = await fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        if (res.ok) {
+          alert('Registration successful! Please check your email.');
+          window.location.href = 'login.html';
+        } else {
+          alert(result.message || 'Registration failed.');
+        }
+      } catch (err) {
+        alert('Error occurred during registration.');
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
